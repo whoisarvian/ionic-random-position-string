@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input
+    placeholder="Random Text"
+    mode="md"
+    name="text"
+    [(ngModel)]="text"
+  ></ion-input>
+  <ion-button color="dark" fill="clear" (click)="rand()">Generate</ion-button>
+  <ul>
+    <li *ngFor="let n of randText">{{n}}</li>
+  </ul>
+</ion-content>
